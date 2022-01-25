@@ -73,14 +73,6 @@
   color: #ffffff;
 }
 
-.input:disabled {
-  background: #ffffff;
-}
-
-.input.dark:disabled {
-  background: #011c2c;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
