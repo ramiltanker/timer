@@ -59,10 +59,26 @@
   padding: 0;
 }
 
+.input::placeholder {
+  color: #000000;
+}
+
 .input.dark {
   background: #011c2c;
   border: 1px solid #dbdbdb;
   color: #ffffff;
+}
+
+.input.dark::placeholder {
+  color: #ffffff;
+}
+
+.input:disabled {
+  background: #ffffff;
+}
+
+.input.dark:disabled {
+  background: #011c2c;
 }
 
 input::-webkit-outer-spin-button,

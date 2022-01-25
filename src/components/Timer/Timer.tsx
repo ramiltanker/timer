@@ -13,6 +13,10 @@ import classNames from "classnames";
 
 import { ThemeContext } from "../../providers/ThemeProvider";
 
+// Sound
+const sound = require("../../sounds/sound.mp3");
+// Sound
+
 type TTime = {
   [key: string]: string;
 };
@@ -21,9 +25,9 @@ const Timer = () => {
   const { type } = useContext(ThemeContext);
 
   const [time, setTime] = React.useState<TTime>({
-    hours: "00",
-    minutes: "00",
-    seconds: "00",
+    hours: "",
+    minutes: "",
+    seconds: "",
   });
   const [totalTime, setTotalTime] = React.useState<any>({
     hours: "00",
@@ -48,6 +52,12 @@ const Timer = () => {
       return { ...state };
     });
   };
+
+  // const handlePlayAudio = (sound: string) => {
+  //   const audio = new Audio(sound);
+
+  //   return audio;
+  // };
 
   React.useEffect(() => {
     let hours = Number(time.hours);
@@ -121,6 +131,11 @@ const Timer = () => {
         }
       } else {
         setTimerStart(false);
+        setTime({
+          hours: "00",
+          minutes: "00",
+          seconds: "00",
+        });
       }
     }, 1000);
 

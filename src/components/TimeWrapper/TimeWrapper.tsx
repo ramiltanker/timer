@@ -24,6 +24,7 @@ const TimeWrapper: FC<ITimeWrapper> = ({ handleChange, time, timerStart }) => {
           <input
             className={classNames(styles.input, type === "dark" && styles.dark)}
             type={"number"}
+            placeholder="00"
             min="0"
             max="24"
             name="hours"
@@ -46,6 +47,7 @@ const TimeWrapper: FC<ITimeWrapper> = ({ handleChange, time, timerStart }) => {
             name="minutes"
             onChange={handleChange}
             value={time.minutes}
+            placeholder="00"
             disabled={timerStart}
           />
         </div>
@@ -58,6 +60,7 @@ const TimeWrapper: FC<ITimeWrapper> = ({ handleChange, time, timerStart }) => {
           <input
             className={classNames(styles.input, type === "dark" && styles.dark)}
             type={"number"}
+            placeholder="00"
             min="0"
             max="60"
             name="seconds"
