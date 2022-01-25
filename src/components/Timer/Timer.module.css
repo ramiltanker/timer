@@ -1,0 +1,53 @@
+.timer {
+  width: 100%;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+  padding: 18px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.container.dark {
+  background-color: #011c2c;
+}
+
+.title {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.31818181818;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+.title.dark {
+  color: #ffffff;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+@media all and (max-width: 465px) {
+  .container {
+    max-width: 300px;
+    margin: 0 15px;
+  }
+}

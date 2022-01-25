@@ -1,0 +1,11 @@
+.indicator {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  transform: translateX(0px);
+  height: 8px;
+  background: #fd6259;
+  border-radius: 0px 0px 4px 4px;
+  bottom: 0;
+  transition: transform 1000ms linear;
+}
